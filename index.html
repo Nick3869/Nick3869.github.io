@@ -14,10 +14,9 @@
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>
-targetTime = new Date(2015,4,5)
 countdownManager = {
 	// Configuration
-	//.getTime() + (60*60*24*5 + 60*60*6 + 60*25 + 37)*1000, // Date cible du compte à rebours (00:00:00)
+	targetTime: new Date(2015,4,5,0,0,0,0)//.getTime() + (60*60*24*5 + 60*60*6 + 60*25 + 37)*1000, // Date cible du compte à rebours (00:00:00)
 	displayElement: { // Elements HTML où sont affichés les informations
 		day:  null,
 		hour: null,
